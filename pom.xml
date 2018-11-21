@@ -50,7 +50,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>jaxb2-maven-plugin</artifactId>
-				<version>1.6</version>
+				<version>2.3</version>
 				<executions>
 					<execution>
 						<phase>clean</phase>
@@ -62,6 +62,7 @@
 							<sources>
 								<source>src/main/xsd/pain.008.001.02.xsd</source>
 							</sources>
+							<xmlschema>false</xmlschema>
 							<packageName>com.directdebit.xml.schema.pain_008_001_02</packageName>
 						</configuration>
 					</execution>
@@ -75,6 +76,7 @@
 							<sources>
 								<source>src/main/xsd/pain.001.003.03.xsd</source>
 							</sources>
+							<xmlschema>false</xmlschema>
 							<packageName>com.directdebit.xml.schema.pain_001_003_03</packageName>
 							<clearOutputDir>false</clearOutputDir>
 						</configuration>
@@ -89,6 +91,7 @@
 							<sources>
 								<source>src/main/xsd/pain.001.001.06.xsd</source>
 							</sources>
+							<xmlschema>false</xmlschema>
 							<packageName>com.directdebit.xml.schema.pain_001_001_06</packageName>
 							<clearOutputDir>false</clearOutputDir>
 						</configuration>
